@@ -19,7 +19,7 @@ class Presentation extends Connection
     {
         $presentations = array();
         $presentationQuery = "SELECT * FROM presentation";
-        $presentation = $this->conn->prepare($presentationQuery);
+        $presentation = $this->conn->query($presentationQuery);
         $presentations = $presentation->fetchAll();
         return $presentations;
     }
