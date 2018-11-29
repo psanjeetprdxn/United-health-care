@@ -1,9 +1,9 @@
 <!-- start of header -->
 <div class="wrapper">
-  <div class="header-top">
+  <div class="header-top cf">
     <h1>
       <a href="index.php" title="United Health Care">
-        <img src=../assets/images/logo.png alt="United Health Care">
+        <img src=assets/images/logo.png alt="United Health Care">
         United Health Care
       </a>
     </h1>

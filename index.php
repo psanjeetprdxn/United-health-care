@@ -17,6 +17,7 @@
 	<div class="container">
 		<!-- Start of the header -->
 		<header>
+			<?php include 'includes/header.php'; ?>
 		</header>
 		<!-- end of header -->
 		<!-- Start of main -->
