@@ -11,7 +11,7 @@
       <span class="capitalize">value story generator</span>
     </div><!-- end of header-generator -->
   </div><!-- end of header-top -->
-  <div class="header-bottom">
+  <div class="header-bottom cf">
     <nav>
       <ul>
         <!-- menu for non-login users (starts)-->
