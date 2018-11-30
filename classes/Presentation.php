@@ -23,6 +23,22 @@ class Presentation extends Connection
         $presentations = $presentation->fetchAll();
         return $presentations;
     }
+
+    /*
+    **********************************************************
+         DELETES PRESENTATION FROM PRESENTATION TABLE
+    **********************************************************
+    */
+    public function deletePresentationById($presentation_id)
+    {
+        $isDeleted = false;
+        $delete = $this->conn->prepare("DELETE FROM presentation where presentation_id = ?");
+        $delete->execute([$presentation_id]);
+        if ($delete) {
+            $isDeleted = true;
+        }
+        return $isDeleted;
+    }
 }
 
 

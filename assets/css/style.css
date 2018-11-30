@@ -181,3 +181,104 @@ nav li:hover a {
   color: #fff;
   border-radius: 0 0 5px 5px;
 }
+
+/* PRESENTATION SECTION STYLING STARTS HERE */
+.presentation .wrapper {
+  width: 87.6%;
+  margin: 0 auto;
+}
+
+.presentation h3 {
+  font-weight: 700;
+  font-size: 27px;
+  color: #3C3636;
+}
+
+.presentaion-details { display: table; }
+
+.presentation-details .table-row-header,
+.presentation-details .table-row-data {
+  border: 1px solid red;
+  display: table-row;
+}
+
+.presentation-details .table-header,
+.presentation-details .table-data {
+  width: 16.4%;
+  padding: 11px 0 24px 0;
+  display: table-cell;
+}
+
+.presentation-details .table-data { border-bottom: 1px solid #e6e6e6; }
+
+.table-header strong {
+  color: #545454;
+  font-size: 16px;
+  letter-spacing: -.9px;
+}
+
+.table-header strong::after {
+  content: '\f107';
+  margin-left: 20px;
+  color: #E0E3E4;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-size: 20px;
+}
+
+.table-header strong:hover strong::after {
+  color: red;
+}
+
+.table-data span { color: #5a5a5a; }
+
+.presentation-details .edit,
+.presentation-details .delete { text-indent: -9999px; }
+.presentation-details .edit { margin-right: 9px; }
+
+.presentation-details a::before {
+  float: right;
+  font-family: "Font Awesome 5 Free";
+  font-size: 26px;
+  text-indent: 0;
+}
+.presentation-details .edit::before {
+    content: '\f044';
+    color: #6ccff9;
+}
+.presentation-details .delete::before {
+    content: '\f2ed';
+    color: #909090;
+}
+
+/* story section stylings starts here */
+.registration {
+    position: relative;
+}
+.registration .wrapper {
+    width: 87.6%;
+    margin: 0 auto;
+}
+
+.story {
+    background-color: #fc6735;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+}
+
+.story .new-functionality {
+    float: right;
+    width: 23.22%;
+    margin-top: 22px;
+}
+
+.functionality-image-wrapper {
+    position: relative;
+}
+
+.new-functionality > span {
+    position: absolute;
+    top: 2px;
+}

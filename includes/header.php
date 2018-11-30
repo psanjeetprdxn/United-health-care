@@ -24,10 +24,10 @@
         <!-- menu for non-login users (end)-->
         <!-- menu for login users (starts) -->
         <li>
-          <span class="uppercase" title="#FIXME">Username</a>
+          <span class="uppercase" title="#FIXME">Username</span>
         </li>
         <li>
-          <a class="capitalize" href="includes/logout.php" class="logout.php">log out</a>
+          <a class="capitalize" href="includes/logout.php">log out</a>
         </li>
         <!-- menu for login users (ends) -->
         <!-- menu for all types of users (starts)-->
