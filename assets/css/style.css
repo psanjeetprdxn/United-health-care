@@ -256,32 +256,133 @@ strong:hover::after { color: #3a3a3a; }
 
 /* story section stylings starts here */
 .registration {
-    position: relative;
+  position: relative;
 }
 .registration .wrapper {
-    width: 87.6%;
-    margin: 0 auto;
+  width: 87.6%;
+  margin: 0 auto;
 }
 
 .story {
-    background-color: #fc6735;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 45%;
+  width: 45%;
+  position: absolute;
+  top: 0;
+  left: 6%;
+  background-color: #fc6735;
 }
 
-.story .new-functionality {
-    float: right;
-    width: 23.22%;
-    margin-top: 22px;
+.new-functionality {
+  width: 30%;
+  margin-top: 22px;
+  float: right;
+  position: relative;
+  left: 7.25%;
 }
 
-.functionality-image-wrapper {
-    position: relative;
-}
+.functionality-image-wrapper { width: 100%; }
 
 .new-functionality > span {
-    position: absolute;
-    top: 2px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin-top: 63px;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.format { padding: 60px 0; }
+
+.format li {
+  width: 30%;
+  border-right: 1px solid #fef4f1;
+  margin-right: calc(33%-5px);
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.format li:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.format li:nth-child(1) .format-wrapper {
+  width: 52%;
+  margin: 0 auto;
+}
+
+.format li:nth-child(2) .format-wrapper {
+  width: 37%;
+  margin: 0 auto;
+}
+
+.format li:nth-child(3) .format-wrapper {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.format .format-wrapper img { width: 100%; }
+
+.format li span {
+  margin-top: 11px;
+  display: block;
+  color: #feffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login {
+  padding: 50px 0 50px;
+  background-color: #00a7dc;
+}
+
+.login .wrapper {
+  width: 87.6%;
+  margin: 0 auto;
+}
+
+.login .form-group {
+  width: 41.25%;
+  margin-right: calc(2.5% - 5px);
+  display: inline-block;
+}
+
+.login span {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+}
+
+.login .contact {
+  margin-top: 15px;
+}
+
+.login input[type=email],
+.login input[type=password] {
+  width: 100%;
+  padding: 7px 0 6px 6px;
+  border: none;
+  display: inline-block;
+  background-color: #e2f6fa;
+  outline: none;
+}
+
+.login input[type=submit] {
+  color: #fff;
+  padding: 6px 20px 5px 20px;
+  outline: none;
+  border: 1px solid #fff;
+  background-color: #ff542c;
+}
+
+.form-button {
+  display: inline-block;;
+  width: 12.5%;
 }
