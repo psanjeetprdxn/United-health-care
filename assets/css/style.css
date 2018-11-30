@@ -365,7 +365,8 @@ strong:hover::after { color: #3a3a3a; }
 }
 
 .login input[type=email],
-.login input[type=password] {
+.login input[type=password],
+.login input[type=text] {
   width: 100%;
   padding: 7px 0 6px 6px;
   border: none;
