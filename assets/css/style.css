@@ -226,7 +226,7 @@ nav li:hover a {
   font-size: 20px;
 }
 
-.table-header strong:hover strong::after {
+.table-header strong:hover strong::after  {
   color: red;
 }
 
@@ -250,6 +250,9 @@ nav li:hover a {
     content: '\f2ed';
     color: #909090;
 }
+
+strong:hover::after { color: #3a3a3a; }
+.delete:hover::before { color: #f00; }
 
 /* story section stylings starts here */
 .registration {
