@@ -24,7 +24,7 @@ class Validator extends Connection {
       CHECKS IF EMAIL EXISTS IN DATABASE
     ****************************************
     */
-    public function isEmailExists(string $email)
+    public function isEmailExists($email)
     {
         $isEmailExists = false;
         $emailQuery = "SELECT email FROM users WHERE email = ?";

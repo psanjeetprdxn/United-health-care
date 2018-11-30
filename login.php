@@ -69,6 +69,10 @@
                 </div>
                 <label class="error-message">
                   <?php
+									if(isset($_SESSION['user_id'])) {
+										header("Location: index.php");
+										exit();
+									}
                   if (isset($_GET['loginEmailError'])) {
                     if ($_GET['loginEmailError']=="wrongType") {
                       echo "Email format is wrong";

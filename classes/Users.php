@@ -13,7 +13,7 @@ class Users extends Connection
           REGISTRATION FOR NEW USERS
     ****************************************
     */
-    public function register(string $name, string $email, string $password)
+    public function register($name, $email, $password)
     {
         $isSignup = false;
         $signup_query = "INSERT INTO users(name, email, password) values(?, ?, ?)";
@@ -42,6 +42,18 @@ class Users extends Connection
             $isLogin = true;
         }
         return $isLogin;
+    }
+
+    public function getNameById($user_id) {
+        $name = "";
+        $getNameQuery = "SELECT name from users where user_id = ?";
+        $getName = $this->conn->prepare($getNameQuery);
+        $getName->execute([$user_id]);
+        if ($getName->rowCount() > 0 ) {
+            $row = $getName->fetch();
+            $name = $row['name'];
+        }
+        return $name;
     }
 
 }
