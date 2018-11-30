@@ -29,10 +29,10 @@ class Users extends Connection
           LOGIN FOR REGISTERED USERS
     ****************************************
     */
-    public function login(string $email, string $password)
+    public function login($email, $password)
     {
         $isLogin = false;
-        $login_query = "SELECT * FROM users WHERE username = ? AND password = ?";
+        $login_query = "SELECT * FROM users WHERE email = ? AND password = ?";
         $login = $this->conn->prepare($login_query);
         $login->execute([$email, md5($password)]);
         if ($login->rowCount() > 0) {
@@ -43,5 +43,5 @@ class Users extends Connection
         }
         return $isLogin;
     }
-    
+
 }

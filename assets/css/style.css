@@ -387,3 +387,7 @@ strong:hover::after { color: #3a3a3a; }
   display: inline-block;;
   width: 12.5%;
 }
+
+.error-message {
+  color: #f00;
+}

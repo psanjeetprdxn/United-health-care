@@ -57,7 +57,7 @@
           </div>
           <div class="login">
             <div class="wrapper">
-              <form action="login.inc.php" method="post">
+              <form action="includes/login.inc.php" method="post">
                 <div class="form-group">
                   <input type="email" name="email" placeholder="Email Address">
                 </div>
@@ -67,7 +67,26 @@
                 <div class="form-button">
                   <input type="submit" value="GO">
                 </div>
-                <label class="error-message"></label>
+                <label class="error-message">
+                  <?php
+                  if (isset($_GET['loginEmailError'])) {
+                    if ($_GET['loginEmailError']=="wrongType") {
+                      echo "Email format is wrong";
+                    }
+                    if ($_GET['loginEmailError']=="required") {
+                      echo "Email required";
+                    }
+                    if ($_GET['loginPasswordError']=="required") {
+                      echo "Password is required";
+                    }
+                  }
+                  if (isset($_GET['login'])) {
+                    if ($_GET['login']=="wrongCreditentials") {
+                      echo "Email or Password is incorrect";
+                    }
+                  }
+                  ?>
+                </label>
                 <span class="contact">Questions? Please contact <a href="mailto:florence.crumpler@uhc.com" >florence.crumpler@uhc.com</a></span>
                 <span>Forgot your password? <a href="#FIXME" class="capitalize">click here</a></span>
               </form>
