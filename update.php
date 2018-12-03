@@ -86,7 +86,7 @@ $presentations = $presentation->getPresentationById($p_id);
                   <input type="text" name="name" placeholder="Name" value="<?php echo $presentations['name'] ?>" title="Name">
                 </div>
                 <div class="form-group">
-                  <input type="text" name="client_name" placeholder="Client Name" value="<?php echo $presentations['name'] ?>" title="Client Name">
+                  <input type="text" name="client_name" placeholder="Client Name" value="<?php echo $presentations['client_name'] ?>" title="Client Name">
                 </div>
                 <div class="form-group">
                   <input type="text" name="status" placeholder="Status" value="<?php echo $presentations['status'] ?>" title="Status">
