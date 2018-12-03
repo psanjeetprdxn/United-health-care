@@ -39,7 +39,21 @@ class Presentation extends Connection
         }
         return $isDeleted;
     }
+
+    /*
+    *******************************************************************
+        Returns presentation details of particular presentation id
+    *******************************************************************
+    */
+    public function getPresentationById($presentation_id)
+    {
+      $presentation = array();
+      $updateQuery = "SELECT * from presentation where presentation_id = ?";
+      $update = $this->conn->prepare($updateQuery);
+      $update->execute([$presentation_id]);
+      if ($update) {
+        $presentation = $update->fetch();
+      }
+      return $presentation;
+    }
 }
-
-
-?>
