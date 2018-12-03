@@ -62,12 +62,12 @@ class Presentation extends Connection
         update presentation
     *******************************************************************
     */
-    public function update($name, $client_name, $status, $type)
+    public function update($name, $client_name, $status, $type, $presentation_id)
     {
       $isUpdate = false;
-      $updateQuery = "UPDATE presentation SET name = ?, client_name = ?, status = ?, type = ?";
+      $updateQuery = "UPDATE presentation SET name = ?, client_name = ?, status = ?, type = ? WHERE presentation_id = ?";
       $update = $this->conn->prepare($updateQuery);
-      $update->execute([$name, $client_name, $status, $type]);
+      $update->execute([$name, $client_name, $status, $type, $presentation_id]);
       if ($update) {
         $isUpdate = true;
       }
