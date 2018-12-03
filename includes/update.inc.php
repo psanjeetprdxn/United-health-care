@@ -5,6 +5,9 @@ function __autoload($classname)
 {
     include "../classes/$classname.php";
 }
+if (isset($_GET['p_id'])) {
+  $p_id = $_GET['p_id'];
+}
 if (isset($_POST['name'])) {
   $name = htmlspecialchars($_POST['name']);
 }
@@ -20,7 +23,7 @@ if (isset($_POST['type'])) {
 //update
 $presentation = new Presentation;
 // $user->login($email, $password);
-if ($presentation->update($name, $client_name, $status, $type)) {
+if ($presentation->update($name, $client_name, $status, $type, $p_id)) {
   header("Location:../index.php");
 } else {
   header("Location:../index.php?msg=notUpdated");

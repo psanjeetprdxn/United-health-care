@@ -81,7 +81,7 @@ $presentations = $presentation->getPresentationById($p_id);
           </div>
           <div class="login">
             <div class="wrapper">
-              <form action="includes/update.inc.php" method="post">
+              <form action="includes/update.inc.php?p_id=<?php echo $p_id; ?>" method="post">
                 <div class="form-group">
                   <input type="text" name="name" placeholder="Name" value="<?php echo $presentations['name'] ?>" title="Name">
                 </div>
