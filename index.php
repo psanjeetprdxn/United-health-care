@@ -73,7 +73,7 @@
 							if (isset($_SESSION['user_id'])) {
 							?>
               <div class="table-data">
-                <a class="edit" href="#FIXME" title="Update">Update</a>
+                <a class="edit" href="update.php?presentation_id=<?php echo $ppt['presentation_id']; ?>" title="Update">Update</a>
 								<?php if ($_SESSION['role'] == 'admin') { ?>
                 <a class="delete" href="delete.php?presentation_id=<?php echo $ppt['presentation_id']; ?>" title="Delete">Delete</a>
 								<?php } ?>
