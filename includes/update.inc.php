@@ -18,9 +18,9 @@ if (isset($_POST['type'])) {
   $type = htmlspecialchars($_POST['type']);
 }
 //update
-$user = new Users();
+$presentation = new Presentation;
 // $user->login($email, $password);
-if ($user->update($name, $client_name, $status, $type)) {
+if ($presentation->update($name, $client_name, $status, $type)) {
   header("Location:../index.php");
 } else {
   header("Location:../index.php?msg=notUpdated");
