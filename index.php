@@ -34,11 +34,13 @@
 			 <!-- end of getPresentation() function -->
 			<!-- start of presentation section -->
       <div class="presentation">
+				<div class="wrapper">
+					<h3 class="capitalize">create, edit or delete a presentation below</h3>
+				</div>
+				<div class="new-presentation cf">
+					<a href="#FIXME" title="Create New Presentation">create new presentaion</a>
+				</div>
         <div class="wrapper">
-          <h3 class="capitalize">create, edit or delete a presentation below</h3>
-          <div class="new-presentation">
-              <a href="#FIXME" title="Create New Presentaion">create new presentaion</a>
-          </div>
           <?php
           if (!empty($presentations)) {
           ?>

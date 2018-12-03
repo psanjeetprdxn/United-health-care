@@ -195,6 +195,30 @@ nav li:hover a {
   color: #3C3636;
 }
 
+.new-presentation {
+  margin: 24px 0 39px;
+  background-color: #f5f5f5;
+}
+
+.new-presentation > a {
+  padding: 18px 20px 15px 0;
+  margin-right: 6.81%;
+  float: right;
+  background-color: #ff542c;
+  color: #fff4f5;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -.1px;
+}
+
+.new-presentation > a::before {
+  content: '\f055';
+  padding: 0 13px 0;
+  font-family: "Font Awesome 5 Free";
+  font-size: 19px;
+  vertical-align: middle;
+}
+
 .presentaion-details { display: table; }
 
 .presentation-details .table-row-header,
