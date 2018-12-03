@@ -1,17 +1,23 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 if (!isset($_SESSION)) {
   session_start();
 }
+// checks if session is started or not
 if (!isset($_SESSION['user_id'])) {
-  header("Location: login.php");
+  header ("Location: login.php?msg=illegalAccess");
   exit();
 } else {
   if (isset($_GET['presentation_id'])) {
     $p_id = $_GET['presentation_id'];
   }
 }
+
+function __autoload($classname)
+{
+  include "classes/$classname.php";
+}
+$presentation = new Presentation;
+$presentations = $presentation->getPresentationById($p_id);
 ?>
 <!doctype html>
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
